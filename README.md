@@ -2,6 +2,10 @@
 
 This repository holds the weekly tutorial materials for BUSS6002.
 
+## Index
+
+[Week 01](week_01/week_01.html)
+
 ## Viewing HTML files
 
 Please use the HTML Preview service at https://htmlpreview.github.io.
