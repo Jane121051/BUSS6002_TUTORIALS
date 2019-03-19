@@ -17,8 +17,8 @@ This repository holds the weekly tutorial materials for BUSS6002.
 - [Tasks](week_03/week_03_tasks.html)
 
 ### Week 04
-- [Tutorial](week_03/week_03.html)
-- [Tasks](week_03/week_03_tasks.html)
+- [Tutorial](week_04/week_04.html)
+- [Tasks](week_04/week_04_tasks.html)
 
 ## Alternative HTML Preview
 
