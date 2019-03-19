@@ -1,0 +1,177 @@
+<style>
+table { 
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 640px;
+  /* Table reset stuff */
+  border-collapse: collapse; border-spacing: 0; 
+}
+  	
+td, th {  border: 0 none; height: 30px; }
+			
+th {
+  /* Gradient Background */
+   font-weight: bold;
+	height: 40px;
+}
+		
+td { backgrounda: #FAFAFA; text-align: center; }
+
+
+tr:nth-child(even) td.green, tr:nth-child(odd) td.green {
+  background: #B3EDBA;
+}
+
+tr:nth-child(even) td.orange, tr:nth-child(odd) td.orange{
+  background:#FFE08B;
+}
+
+tr:nth-child(even) td.purple, tr:nth-child(odd) td.purple{
+  background: rgba(200, 37, 199, 0.65);
+}
+
+/* Zebra Stripe Rows */
+		
+tr:nth-child(even) td { background: #EEE; } 
+tr:nth-child(odd) td { background: #FDFDFD; }
+
+/* Add border-radius to specific cells! */
+tr:first-child th:first-child  { 
+  border-radius: 5px 0 0 0; 
+} 
+
+tr:first-child th:last-child { 
+  border-radius: 0 5px 0 0; 
+}
+
+tr th {
+  border-bottom:solid;
+  border-bottom-width: thin;
+}
+
+</style>
+
+<table style="max-width: 400px">
+
+  <tr>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Salary</th>
+  </tr>
+
+  <tr>
+    <td class="green">Old</td>
+    <td>Female</td>
+    <td>47500</td>
+  </tr>
+
+  <tr>
+    <td class="orange">Middle</td>
+    <td>Male</td>
+    <td>63600</td>
+  </tr>
+
+  <tr>
+    <td class="purple">Young</td>
+    <td>Female</td>
+    <td>13500</td>
+  </tr>
+
+  <tr>
+    <td class="orange">Middle</td>
+    <td>Male</td>
+    <td>85600</td>
+  </tr>
+
+  <tr>
+    <td class="green">Old</td>
+    <td>Female</td>
+    <td>49000</td>
+  </tr>
+
+</table>
+
+<table style="max-width: 300px">
+
+  <tr>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Salary</th>
+  </tr>
+
+  <tr>
+    <td class="orange">Middle</td>
+    <td>Male</td>
+    <td>63600</td>
+  </tr>
+
+  <tr>
+    <td class="orange">Middle</td>
+    <td>Male</td>
+    <td>85600</td>
+  </tr>
+
+</table>
+
+<table style="max-width: 300px">
+
+  <tr>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Salary</th>
+  </tr>
+
+  <tr>
+    <td class="green">Old</td>
+    <td>Female</td>
+    <td>47500</td>
+  </tr>
+
+  <tr>
+    <td class="green">Old</td>
+    <td>Female</td>
+    <td>47500</td>
+  </tr>
+
+</table>
+
+<table style="max-width: 300px">
+
+  <tr>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Salary</th>
+  </tr>
+
+  <tr>
+    <td class="purple">Young</td>
+    <td>Female</td>
+    <td>13500</td>
+  </tr>
+
+</table>
+
+<table style="max-width: 300px">
+
+  <tr>
+    <th>Age</th>
+    <th>Salary Mean</th>
+  </tr>
+
+  <tr>
+    <td class="orange">Middle</td>
+    <td>74600</td>
+  </tr>
+
+  <tr>
+    <td class="green">Old</td>
+    <td>48250</td>
+  </tr>
+
+  <tr>
+    <td class="purple">Young</td>
+    <td>13500</td>
+  </tr>
+
+</table>
+

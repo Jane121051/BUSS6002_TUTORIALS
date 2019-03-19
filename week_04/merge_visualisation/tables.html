@@ -1,0 +1,203 @@
+<style>
+table { 
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 640px;
+  /* Table reset stuff */
+  border-collapse: collapse; border-spacing: 0; 
+}
+  	
+td, th {  border: 0 none; height: 30px; }
+			
+th {
+  /* Gradient Background */
+   font-weight: bold;
+	height: 40px;
+}
+		
+td { backgrounda: #FAFAFA; text-align: center; }
+
+
+tr:nth-child(even) td.green, tr:nth-child(odd) td.green {
+  background: #B3EDBA;
+}
+
+tr:nth-child(even) td.orange, tr:nth-child(odd) td.orange{
+  background:#FFE08B;
+}
+
+tr:nth-child(even) td.purple, tr:nth-child(odd) td.purple{
+  background: rgba(200, 37, 199, 0.65);
+}
+
+/* Zebra Stripe Rows */
+		
+tr:nth-child(even) td { background: #EEE; } 
+tr:nth-child(odd) td { background: #FDFDFD; }
+
+/* Add border-radius to specific cells! */
+tr:first-child th:first-child  { 
+  border-radius: 5px 0 0 0; 
+} 
+
+tr:first-child th:last-child { 
+  border-radius: 0 5px 0 0; 
+}
+
+tr th {
+  border-bottom:solid;
+  border-bottom-width: thin;
+}
+
+</style>
+
+<table style="max-width: 400px">
+
+  <tr>
+    <th>Customer ID</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Salary</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Old</td>
+    <td>Female</td>
+    <td>47500</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td>Middle</td>
+    <td>Male</td>
+    <td>63600</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>Young</td>
+    <td>Female</td>
+    <td>13500</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>Middle</td>
+    <td>Male</td>
+    <td>85600</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>Old</td>
+    <td>Female</td>
+    <td>49000</td>
+  </tr>
+
+</table>
+
+
+
+
+
+<table style="max-width: 500px">
+
+  <tr>
+    <th>Customer ID</th>
+    <th>Reward Points</th>
+    <th>Reward Account Number</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>2100</td>
+    <td>22341410</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td>1500</td>
+    <td>22362700</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>1900</td>
+    <td>22312108</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>3500</td>
+    <td>22341432</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>550</td>
+    <td>22368719</td>
+  </tr>
+
+
+</table>
+
+
+
+<table style="max-width: 800px">
+
+  <tr>
+    <th>Customer ID</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Salary</th>
+    <th>Reward Points</th>
+    <th>Reward Account Number</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Old</td>
+    <td>Female</td>
+    <td>47500</td>
+    <td>2100</td>
+    <td>22341410</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td>Middle</td>
+    <td>Male</td>
+    <td>63600</td>
+    <td>1500</td>
+    <td>22362700</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>Young</td>
+    <td>Female</td>
+    <td>13500</td>
+    <td>1900</td>
+    <td>22312108</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>Middle</td>
+    <td>Male</td>
+    <td>85600</td>
+    <td>3500</td>
+    <td>22341432</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>Old</td>
+    <td>Female</td>
+    <td>49000</td>
+    <td>550</td>
+    <td>22368719</td>
+  </tr>
+
+</table>
