@@ -1,0 +1,91 @@
+<style>
+table { 
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 640px;
+  /* Table reset stuff */
+  border-collapse: collapse; border-spacing: 0; 
+}
+  	
+td, th {  border: 0 none; height: 30px; }
+			
+th {
+  /* Gradient Background */
+   font-weight: bold;
+	height: 40px;
+}
+		
+td { backgrounda: #FAFAFA; text-align: center; }
+
+/* Zebra Stripe Rows */
+		
+tr:nth-child(even) td { background: #EEE; } 
+tr:nth-child(odd) td { background: #FDFDFD; }
+
+/* Add border-radius to specific cells! */
+tr:first-child th:first-child  { 
+  border-radius: 5px 0 0 0; 
+} 
+
+tr:first-child th:last-child { 
+  border-radius: 0 5px 0 0; 
+}
+
+tr:nth-child(1) th:first-child {
+  background-color: #49B156;
+  color: white;
+}
+tr:nth-child(2) th:nth-child(-n+3) {
+  background-color:#B3EDBA;
+}
+
+tr:nth-child(1) th:last-child {
+  background-color: #FFC72E;
+}
+tr:nth-child(2) th:last-child {
+  background-color:#FFE08B;
+}
+
+tr td:nth-child(4), tr th:nth-child(4), tr:nth-child(1) th:last-child {
+  border-left:solid;
+  border-left-width: thin;
+  
+}
+
+</style>
+
+<table>
+  <tr>
+    <th colspan="3">Feature Variables</th>
+    <th>Target Variable</th>
+  </tr>
+
+  <tr>
+    <th>Square Feet</th>
+    <th>Bedrooms</th>
+    <th>Bathrooms</th>
+    <th>Price</th>
+  </tr>
+  
+  <tr>
+    <td>741</td>
+    <td>1</td>
+    <td>1</td>
+    <td>66500</td>
+  </tr>
+  
+  <tr>
+    <td>2783</td>
+    <td>2</td>
+    <td>2</td>
+    <td>102000</td>
+  </tr>
+  
+  <tr>
+    <td>1165</td>
+    <td>2</td>
+    <td>1</td>
+    <td>54000</td>
+  </tr>
+  
+</table>
