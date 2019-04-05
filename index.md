@@ -24,3 +24,7 @@
 ### Week 06
 - [Tutorial](week_06/week_06.html)
 - [Tasks](week_06/week_06_tasks.html)
+- 
+### Week 07
+- [Tutorial](week_07/week_07.html)
+- [Tasks](week_07/week_07_tasks.html)
