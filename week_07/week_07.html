@@ -12967,7 +12967,7 @@ Predicted class: 1
 <p>These metrics work by comparing our model's predicted values to known labels, so you always need the ground-truth classification for your data when evaluating classification performance.</p>
 <p>The simplest approach is to use a confusion matrix and the classification report, which shows multiple metrics at once!</p>
 <p>The confusion matrix keeps track of our model's hits and misses, and shows the number of true positive, false positive, false negative and true negative classifications. Ideally we want a diagonal matrix, meaning only true positive and true negative classifications.</p>
-<p>&lt;img src="img/confusion_m.png" width = 300&gt;</p>
+<p><img src="img/confusion_m.png" width=300></p>
 <p>To produce a confusion matrix for our model, we need to first generate some prediction data. We then use the <code>confusion_matrix</code> function from the sklearn metrics library.</p>
 <p><div style="margin-bottom: 0px;"><img width=20 style="display: block; float: left;  margin-right: 20px;" src="img/docs.png"> <h3 style="padding-top: 0px;">Documentation - Confusion_matrix</h3></div>
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html</a></p>
