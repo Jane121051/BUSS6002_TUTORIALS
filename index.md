@@ -33,3 +33,7 @@
 ### Week 08
 - [Tutorial](week_08/week_08.html)
 - [Tasks](week_08/week_08_tasks.html)
+
+### Week 09
+- [Tutorial](week_09/week_09.html)
+- [Tasks](week_09/week_09_tasks.html)
