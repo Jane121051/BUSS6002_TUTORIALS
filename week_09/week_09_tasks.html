@@ -11939,7 +11939,7 @@ using the Newton-Raphson method with random initialisation.</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0.8995552195402163
+<pre>0.21198981216274618
 </pre>
 </div>
 </div>
@@ -11954,6 +11954,7 @@ using the Newton-Raphson method with random initialisation.</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Task-2---Newton-Raphson">Task 2 - Newton Raphson<a class="anchor-link" href="#Task-2---Newton-Raphson">&#182;</a></h1><p>Use Newton-Raphson to solve
 $$\min_{x} f(x) = x^2 -1$$</p>
+<p>with random initialisation.</p>
 
 </div>
 </div>
@@ -11974,7 +11975,7 @@ $$\min_{x} f(x) = x^5 - 3 x^4 + \exp(- x^2) \sin(10 x)$$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="o">*</span>
@@ -11988,34 +11989,74 @@ $$\min_{x} f(x) = x^5 - 3 x^4 + \exp(- x^2) \sin(10 x)$$</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2*x</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Task-4---Gradient-Descent">Task 4 - Gradient Descent<a class="anchor-link" href="#Task-4---Gradient-Descent">&#182;</a></h2><ol>
-<li>Plot the gradient descent path over the objective function for the gradient descent example given</li>
+<li>Plot the gradient descent path over the objective function for the gradient descent example given in the tutorial</li>
 <li>Given that the true value of beta_1 is 2, have we found discovered the true value exactly? Why or why not?</li>
 <li>What happens if you change alpha to 0.1 or 0.000001?</li>
 <li>What happens if you increase or decrease the number of iterations for a fixed value of alpha?</li>
 </ol>
 <h2 id="Task-5---Stochastic-Gradient-Descent">Task 5 - Stochastic Gradient Descent<a class="anchor-link" href="#Task-5---Stochastic-Gradient-Descent">&#182;</a></h2><ol>
-<li>Adapt the code from the example to implement SGD</li>
+<li>Adapt the code from the tutorial example (and Task 4) to implement SGD</li>
 </ol>
+<p>You can randomly sample from a list by using <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.choice.html">https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.choice.html</a>. For example:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">docs</span><span class="o">.</span><span class="n">scipy</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">reference</span><span class="o">/</span><span class="n">generated</span><span class="o">/</span><span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="o">.</span><span class="n">html</span>
-    
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">indices</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">indices</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">omega</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1 2]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
