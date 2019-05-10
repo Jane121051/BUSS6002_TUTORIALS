@@ -41,3 +41,7 @@
 ### Week 10
 - [Tutorial](week_10/week_10.html)
 - [Tasks](week_10/week_10_tasks.html)
+- 
+### Week 11
+- [Tutorial](week_11/week_11.html)
+- [Tasks](week_11/week_11_tasks.html)
