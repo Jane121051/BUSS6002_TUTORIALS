@@ -14,6 +14,7 @@
 - [Tasks](week_03/week_03_tasks.html)
 
 ### Week 04
+
 - [Tutorial](week_04/week_04.html)
 - [Tasks](week_04/week_04_tasks.html)
 
@@ -49,3 +50,7 @@
 ### Week 12
 - [Tutorial](week_12/week_12.html)
 - [Tasks](week_12/week_12_tasks.html)
+
+### Week 12
+- [Tutorial](week_13/week_13.html)
+- [Tasks](week_13/week_13_tasks.html)
