@@ -11905,14 +11905,35 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><h1>BUSS6002 - Data Science in Business</h1></center><h1 id="Tutorial-11-Tasks">Tutorial 11 Tasks<a class="anchor-link" href="#Tutorial-11-Tasks">&#182;</a></h1><h2 id="Task-1">Task 1<a class="anchor-link" href="#Task-1">&#182;</a></h2><p>Using the DirectMarketing dataset cluster the customers into market segments</p>
+<center><h1>BUSS6002 - Data Science in Business</h1></center><h1 id="Tutorial-11-Tasks">Tutorial 11 Tasks<a class="anchor-link" href="#Tutorial-11-Tasks">&#182;</a></h1><h2 id="Task-1:-Who-Tweeted-It?-Trump-vs-Obama">Task 1: Who Tweeted It? Trump vs Obama<a class="anchor-link" href="#Task-1:-Who-Tweeted-It?-Trump-vs-Obama">&#182;</a></h2><p>Train a logistic regression classifier to predict whether a tweet belongs to Trump or Obama.</p>
 <ul>
-<li>Use k-means</li>
-<li>Search for the optimal number of segments</li>
-<li>Summarise your observations about each market segment using both visualisation and written answer</li>
+<li>Use the two files "BarackObama.csv" and "DonaldTrumpTweets.csv"</li>
+<li>Clean the tweet data to remove incompatible pieces of text like URLs, mentions and poor formatting</li>
+<li>Transform the tweet data into a bag of words representation</li>
+<li>Split into a train and test set</li>
+<li>Train a logistic regression classifier</li>
+<li>Quantify performance </li>
 </ul>
-<h2 id="Task-2">Task 2<a class="anchor-link" href="#Task-2">&#182;</a></h2><p>Find the 10 most popular products for each customer segment and the price of these products.</p>
-<p>For each customer the last 10 products they they purchased has been recorded in the "last_purchases.csv" file. The prices for each product are listed in the "product_prices.csv" file.</p>
+<p>Optional further steps:</p>
+<ol>
+<li>Optimise your logisitic regression classifier using cross validation</li>
+<li>Try and compare other classifiers using cross validation</li>
+</ol>
+<p><em>Data from <a href="https://www.kaggle.com/adhok93/president-obama/data">https://www.kaggle.com/adhok93/president-obama/data</a></em></p>
+<h2 id="Task-2:-PCA">Task 2: PCA<a class="anchor-link" href="#Task-2:-PCA">&#182;</a></h2><p>On the airline dataset build a logistic regression classifier to predict whether flights will be delayed by $\geq 20$ minutes.</p>
+<p>This dataset has a lot of features. Therefore we would like to use dimensionality reduction to bring the number of features under control and reduce the training time.</p>
+<ul>
+<li>Pre-process the data<ul>
+<li>Remove irrelevant features</li>
+<li>Remove categorical variables</li>
+<li>Remove null values</li>
+</ul>
+</li>
+<li>Perform PCA on the data</li>
+<li>Find the number of components that explain 85% of the variance</li>
+<li>Build a logistic regression model using the PCA transformed features</li>
+<li>Evaluate classification accuracy against using the original features</li>
+</ul>
 
 </div>
 </div>
