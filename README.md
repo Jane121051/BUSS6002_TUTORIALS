@@ -1,4 +1,4 @@
-# BUSS6002_2019_SEM1
+# BUSS6002_TUTORIALS
 
 This repository holds the weekly tutorial materials for BUSS6002.
 
