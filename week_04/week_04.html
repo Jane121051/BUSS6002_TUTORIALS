@@ -11905,7 +11905,13 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><h1>BUSS6002 - Data Science in Business</h1></center><h1 id="Tutorial-4---Data-Handling,-Accessing-APIs-and-Visualisation">Tutorial 4 - Data Handling, Accessing APIs and Visualisation<a class="anchor-link" href="#Tutorial-4---Data-Handling,-Accessing-APIs-and-Visualisation">&#182;</a></h1><p>Start by importing <code>pandas</code> and loading our marketing dataset</p>
+<center><h1>BUSS6002 - Data Science in Business</h1></center><h4 id="Pre-Tutorial-Checklist">Pre-Tutorial Checklist<a class="anchor-link" href="#Pre-Tutorial-Checklist">&#182;</a></h4><ol>
+<li>Complete Tasks 1 and 3 from Week 3</li>
+<li>Attempt Week 4 tutorial up to AND including Exercise 1</li>
+<li>Obtain an API key from <a href="https://openweathermap.org/appid#get">https://openweathermap.org/appid#get</a></li>
+<li>Obtain an API key from Quandl by creating an account <a href="https://www.quandl.com/">https://www.quandl.com/</a></li>
+</ol>
+<h1 id="Tutorial-4---Data-Handling,-Accessing-APIs-and-Visualisation">Tutorial 4 - Data Handling, Accessing APIs and Visualisation<a class="anchor-link" href="#Tutorial-4---Data-Handling,-Accessing-APIs-and-Visualisation">&#182;</a></h1><p>Start by importing <code>pandas</code> and loading our marketing dataset</p>
 
 </div>
 </div>
@@ -12266,7 +12272,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalog_groups</span> <span class="o">=</span> <span class="n">marketing</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Catalogs&#39;</span><span class="p">)</span>
@@ -12283,7 +12289,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[3]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -12602,7 +12608,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalog_groups</span><span class="o">.</span><span class="n">sum</span><span class="p">()[</span><span class="s1">&#39;AmountSpent&#39;</span><span class="p">]</span>
@@ -12618,7 +12624,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+<div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -12649,7 +12655,7 @@ Name: AmountSpent, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">catalog_groups</span><span class="p">)</span>
@@ -12665,7 +12671,7 @@ Name: AmountSpent, dtype: int64</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -12703,7 +12709,7 @@ Name: AmountSpent, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">catalog_groups</span><span class="o">.</span><span class="n">groups</span><span class="p">)</span>
@@ -13411,7 +13417,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Specify the apiKey</span>
@@ -13465,7 +13471,7 @@ http://api.openweathermap.org/data/2.5/weather?appid=491a9ec8e8da3febdea1b7e83c2
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span><span class="o">,</span> <span class="nn">json</span>
@@ -13490,7 +13496,7 @@ http://api.openweathermap.org/data/2.5/weather?appid=491a9ec8e8da3febdea1b7e83c2
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;coord&#39;: {&#39;lon&#39;: 151.22, &#39;lat&#39;: -33.85}, &#39;weather&#39;: [{&#39;id&#39;: 802, &#39;main&#39;: &#39;Clouds&#39;, &#39;description&#39;: &#39;scattered clouds&#39;, &#39;icon&#39;: &#39;03d&#39;}], &#39;base&#39;: &#39;stations&#39;, &#39;main&#39;: {&#39;temp&#39;: 300.76, &#39;pressure&#39;: 1017, &#39;humidity&#39;: 54, &#39;temp_min&#39;: 297.59, &#39;temp_max&#39;: 304.26}, &#39;visibility&#39;: 10000, &#39;wind&#39;: {&#39;speed&#39;: 10.3, &#39;deg&#39;: 40}, &#39;clouds&#39;: {&#39;all&#39;: 40}, &#39;dt&#39;: 1552022765, &#39;sys&#39;: {&#39;type&#39;: 1, &#39;id&#39;: 9600, &#39;message&#39;: 0.0093, &#39;country&#39;: &#39;AU&#39;, &#39;sunrise&#39;: 1551988103, &#39;sunset&#39;: 1552033382}, &#39;id&#39;: 2147714, &#39;name&#39;: &#39;Sydney&#39;, &#39;cod&#39;: 200}
+<pre>{&#39;coord&#39;: {&#39;lon&#39;: 151.22, &#39;lat&#39;: -33.85}, &#39;weather&#39;: [{&#39;id&#39;: 802, &#39;main&#39;: &#39;Clouds&#39;, &#39;description&#39;: &#39;scattered clouds&#39;, &#39;icon&#39;: &#39;03d&#39;}], &#39;base&#39;: &#39;stations&#39;, &#39;main&#39;: {&#39;temp&#39;: 298.92, &#39;pressure&#39;: 1015, &#39;humidity&#39;: 69, &#39;temp_min&#39;: 297.59, &#39;temp_max&#39;: 300.37}, &#39;visibility&#39;: 10000, &#39;wind&#39;: {&#39;speed&#39;: 5.1, &#39;deg&#39;: 130}, &#39;clouds&#39;: {&#39;all&#39;: 40}, &#39;dt&#39;: 1553229951, &#39;sys&#39;: {&#39;type&#39;: 1, &#39;id&#39;: 9600, &#39;message&#39;: 0.005, &#39;country&#39;: &#39;AU&#39;, &#39;sunrise&#39;: 1553198350, &#39;sunset&#39;: 1553241916}, &#39;id&#39;: 2147714, &#39;name&#39;: &#39;Sydney&#39;, &#39;cod&#39;: 200}
 </pre>
 </div>
 </div>
@@ -13512,7 +13518,7 @@ http://api.openweathermap.org/data/2.5/weather?appid=491a9ec8e8da3febdea1b7e83c2
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">temperature</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="s2">&quot;main&quot;</span><span class="p">][</span><span class="s2">&quot;temp&quot;</span><span class="p">]</span>    
@@ -13545,9 +13551,9 @@ http://api.openweathermap.org/data/2.5/weather?appid=491a9ec8e8da3febdea1b7e83c2
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre> Temperature (in kelvin) = 300.76
- atmospheric pressure (in hPa) = 1017
- humidity (percent) = 54
+<pre> Temperature (in kelvin) = 298.92
+ atmospheric pressure (in hPa) = 1015
+ humidity (percent) = 69
  description = scattered clouds
 </pre>
 </div>
@@ -13580,7 +13586,7 @@ http://api.openweathermap.org/data/2.5/weather?appid=491a9ec8e8da3febdea1b7e83c2
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">quandl</span>
@@ -13602,7 +13608,7 @@ http://api.openweathermap.org/data/2.5/weather?appid=491a9ec8e8da3febdea1b7e83c2
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[18]:</div>
+<div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -13921,7 +13927,7 @@ http://api.openweathermap.org/data/2.5/weather?appid=491a9ec8e8da3febdea1b7e83c2
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We call .bar() on both sets of data. On the second call we must also specify the bottom dataset</span>

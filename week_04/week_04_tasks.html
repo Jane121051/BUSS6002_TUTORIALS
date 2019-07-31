@@ -11912,11 +11912,11 @@ a.anchor-link {
 </ol>
 <h2 id="Task-2---APIs">Task 2 - APIs<a class="anchor-link" href="#Task-2---APIs">&#182;</a></h2><p>We will use Quandl to analyse Forex exchange data.</p>
 <ol>
-<li><p>Use Quandl to obtain time-series datasets for the GBP/USD and AUD/USD exchange rates. These are available through the <code>CURRFX</code> database and have the Quandl codes <code>GBPUSD</code> and <code>GBPAUD</code> respectively. We're interested in rates between the 1st of January 2018 and the 30th of December 2018. Use the <code>collapse='weekly'</code> argument to request weekly data.</p>
+<li><p>Use Quandl to obtain time-series datasets for the GBP/USD and AUD/USD exchange rates. These are available through the <code>CURRFX</code> database and have the Quandl codes <code>GBPUSD</code> and <code>AUDUSD</code> respectively. We're interested in rates between the 1st of January 2018 and the 30th of December 2018. Use the <code>collapse='weekly'</code> argument to request weekly data.</p>
 </li>
 <li><p>Merge the GBP and AUD dataframes using an inner merge. Use indices as merge keys for both left and right DataFrames. To keep track of columns, it may be necessary to rename them.</p>
 </li>
-<li><p>So far, all columns are exchange rates in terms of USD. Create a new column, corresponding to the exchange rate of AUD in GBP. You can call the column <code>AUD in GBP</code>.</p>
+<li><p>So far, all columns are exchange rates in terms of USD. Create a new column, corresponding to the exchange rate of GBP in AUD. You can call the column <code>GBP in AUD</code>.</p>
 </li>
 <li><p>Plot the new column as a line plot.</p>
 </li>

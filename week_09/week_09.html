@@ -11905,7 +11905,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><h1>BUSS6002 - Data Science in Business</h1></center><h1 id="Tutorial-9---Optimisation">Tutorial 9 - Optimisation<a class="anchor-link" href="#Tutorial-9---Optimisation">&#182;</a></h1><p>Optimisation is a fundamental component of modern Data Science and Machine Learning. The solutions to tasks such as regression and classification are most commonly found by solving an optimisation problem.</p>
+<center><h1>BUSS6002 - Data Science in Business</h1></center><h4 id="Pre-Tutorial-Checklist">Pre-Tutorial Checklist<a class="anchor-link" href="#Pre-Tutorial-Checklist">&#182;</a></h4><ol>
+<li>Complete Task 1 from week 8</li>
+<li>Read entire tutorial</li>
+</ol>
+<h1 id="Tutorial-9---Optimisation">Tutorial 9 - Optimisation<a class="anchor-link" href="#Tutorial-9---Optimisation">&#182;</a></h1><p>Optimisation is a fundamental component of modern Data Science and Machine Learning. The solutions to tasks such as regression and classification are most commonly found by solving an optimisation problem.</p>
 <h1 id="Newton-Raphson-Method">Newton-Raphson Method<a class="anchor-link" href="#Newton-Raphson-Method">&#182;</a></h1><p>The Newton-Raphson method is an algorithm to find the roots of a function.</p>
 <p>To start lets look at functions with scalar inputs and scalar outputs e.g $f(x) = x^2 - 1$ or $f(x) = \sin(x)$ where where $x \in \mathbb{R}$ is a real number and $f$ outputs a real number too.</p>
 <p>The problem we are trying to solve here is to find the inputs $x$ such that $f(x) = 0$. For example, if our function is $f(x) = x - 2$, then the input $x = 2$ makes $f(x) = f(2) = 0$. Such an input $x$ is called the root of the function $f$.</p>
@@ -11916,7 +11920,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># THIS PLOT IS FOR ILLUSTRATION. YOU DON&#39;T NEED TO READ THE CODE!</span>
@@ -11991,7 +11995,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
@@ -12070,7 +12074,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -12119,12 +12123,19 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>x = 10.00, f(x) = 99.00
-x = 5.05, f(x) = 24.50
-x = 2.62, f(x) = 5.89
-x = 1.50, f(x) = 1.26
-x = 1.08, f(x) = 0.18
-x = 1.00, f(x) = 0.01
+<pre>x = 0.00, f(x) = -1.00
+x = 500.00, f(x) = 249999.50
+x = 250.00, f(x) = 62499.63
+x = 125.00, f(x) = 15624.66
+x = 62.51, f(x) = 3905.91
+x = 31.26, f(x) = 976.23
+x = 15.65, f(x) = 243.81
+x = 7.86, f(x) = 60.70
+x = 3.99, f(x) = 14.93
+x = 2.12, f(x) = 3.50
+x = 1.30, f(x) = 0.68
+x = 1.03, f(x) = 0.07
+x = 1.00, f(x) = 0.00
 x = 1.00, f(x) = 0.00
 </pre>
 </div>
@@ -12163,7 +12174,7 @@ x = 1.00, f(x) = 0.00
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
@@ -12252,7 +12263,7 @@ $$f(\theta_t) - f(\theta_{t-1}) &lt; \epsilon $$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># THIS CELL IS USED TO GENERATE SOME SYNTHETIC DATA</span>
@@ -12308,7 +12319,7 @@ $$f(\theta_t) - f(\theta_{t-1}) &lt; \epsilon $$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
@@ -12337,7 +12348,7 @@ $$f(\theta_t) - f(\theta_{t-1}) &lt; \epsilon $$
     <span class="k">if</span> <span class="n">f_change</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Terminating Early&quot;</span><span class="p">)</span>
         <span class="k">break</span>
-    
+        
     <span class="n">beta</span> <span class="o">=</span> <span class="n">beta_next</span>
     <span class="n">f_past</span> <span class="o">=</span> <span class="n">f_next</span>
 
@@ -12359,7 +12370,7 @@ $$f(\theta_t) - f(\theta_{t-1}) &lt; \epsilon $$
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Terminating Early
-2.115310580180859
+1.1951495944761312
 </pre>
 </div>
 </div>

@@ -11905,7 +11905,12 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><h1>BUSS6002 - Data Science in Business</h1></center><h1 id="Tutorial-5---Databases">Tutorial 5 - Databases<a class="anchor-link" href="#Tutorial-5---Databases">&#182;</a></h1><p>In this tutorial we will work with data not stored on our computer in a CSV or Excel file, but rather on a database  only accesible via the network. The majority of large businesses will store their data in a database on a single large server or a cluster of servers.</p>
+<center><h1>BUSS6002 - Data Science in Business</h1></center><h4 id="Pre-Tutorial-Checklist">Pre-Tutorial Checklist<a class="anchor-link" href="#Pre-Tutorial-Checklist">&#182;</a></h4><ol>
+<li>Complete Tasks 1 and 2 from Week 4</li>
+<li>Create an account with ElephantSQl <a href="https://customer.elephantsql.com/signup">https://customer.elephantsql.com/signup</a>'</li>
+<li>Install psycopg2 package, if you need help watch the pencast titled “Installing libraries”</li>
+</ol>
+<h1 id="Tutorial-5---Databases">Tutorial 5 - Databases<a class="anchor-link" href="#Tutorial-5---Databases">&#182;</a></h1><p>In this tutorial we will work with data not stored on our computer in a CSV or Excel file, but rather on a database  only accesible via the network. The majority of large businesses will store their data in a database on a single large server or a cluster of servers.</p>
 <h2 id="PostgreSQL">PostgreSQL<a class="anchor-link" href="#PostgreSQL">&#182;</a></h2><p>Today we will work with PostgreSQL databases. PostgreSQL (often just called "Postgres") is one of many "SQL" database systems available. We use it today for the following reasons:</p>
 <ul>
 <li>Ubiquity, postgres databases are everywhere in the real world</li>
@@ -11952,15 +11957,27 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
 
-<span class="n">connection</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">dbname</span><span class="o">=</span><span class="s2">&quot;YOUR DB NAME&quot;</span><span class="p">,</span>
-                               <span class="n">user</span><span class="o">=</span><span class="s2">&quot;YOUR DB USER&quot;</span><span class="p">,</span>
-                               <span class="n">password</span><span class="o">=</span><span class="s2">&quot;YOUR PASSWORD&quot;</span><span class="p">,</span>
-                               <span class="n">host</span><span class="o">=</span><span class="s2">&quot;DOMAIN NAME OF SERVER&quot;</span><span class="p">,</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">dbname</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
+                               <span class="n">user</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
+                               <span class="n">password</span><span class="o">=</span><span class="s2">&quot;q8ZgYAm7qUkYIAgUAlcBXWCgJwshvkEU&quot;</span><span class="p">,</span>
+                               <span class="n">host</span><span class="o">=</span><span class="s2">&quot;isilo.db.elephantsql.com&quot;</span><span class="p">,</span>
+                               <span class="n">port</span><span class="o">=</span><span class="mi">5432</span><span class="p">)</span>
+
+<span class="n">connection2</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">dbname</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
+                               <span class="n">user</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
+                               <span class="n">password</span><span class="o">=</span><span class="s2">&quot;q8ZgYAm7qUkYIAgUAlcBXWCgJwshvkEU&quot;</span><span class="p">,</span>
+                               <span class="n">host</span><span class="o">=</span><span class="s2">&quot;isilo.db.elephantsql.com&quot;</span><span class="p">,</span>
+                               <span class="n">port</span><span class="o">=</span><span class="mi">5432</span><span class="p">)</span>
+
+<span class="n">connection3</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">dbname</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
+                               <span class="n">user</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
+                               <span class="n">password</span><span class="o">=</span><span class="s2">&quot;q8ZgYAm7qUkYIAgUAlcBXWCgJwshvkEU&quot;</span><span class="p">,</span>
+                               <span class="n">host</span><span class="o">=</span><span class="s2">&quot;isilo.db.elephantsql.com&quot;</span><span class="p">,</span>
                                <span class="n">port</span><span class="o">=</span><span class="mi">5432</span><span class="p">)</span>
 </pre></div>
 
@@ -12119,7 +12136,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">psycopg2.extras</span> <span class="k">import</span> <span class="n">execute_values</span>
@@ -12140,12 +12157,38 @@ a.anchor-link {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-2-4bbf47cb1795&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span> 
+<span class="ansi-green-intense-fg ansi-bold">     10</span> <span class="ansi-red-fg"># Get a cursor</span>
+<span class="ansi-green-fg">---&gt; 11</span><span class="ansi-red-fg"> </span>cursor <span class="ansi-blue-fg">=</span> connection<span class="ansi-blue-fg">.</span>cursor<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     12</span> execute_values<span class="ansi-blue-fg">(</span>cursor<span class="ansi-blue-fg">,</span> insert_qry<span class="ansi-blue-fg">,</span> data<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;connection&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Transactions">Transactions<a class="anchor-link" href="#Transactions">&#182;</a></h1><p>Postgres supports the concept of transactions. A Transaction is are a list of changes to the database that must happen together. In other words a transction is used to encapsulate an atomic change to the database.</p>
+<h1 id="Transactions">Transactions<a class="anchor-link" href="#Transactions">&#182;</a></h1><p>Postgres supports the concept of transactions. A Transaction is a list of changes to the database that must happen together. In other words a transction is used to encapsulate an atomic change to the database.</p>
 <p>For example if we have a database of bank customers and Alice wants to send Bob $100. There are two steps:</p>
 <ol>
 <li>Subtract 100 from Alice's account</li>
@@ -12349,8 +12392,6 @@ a.anchor-link {
     <span class="k">if</span> <span class="n">row</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">break</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
-
-<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -13668,7 +13709,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
@@ -13683,6 +13724,31 @@ a.anchor-link {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[1]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[(&#39;Tutor&#39;, &#39;BUSS6002&#39;),
+ (&#39;Tutor&#39;, &#39;BUSS6002&#39;),
+ (&#39;Lecturer&#39;, &#39;BUSS6002&#39;),
+ (&#39;Tutor&#39;, &#39;BUSS6002&#39;),
+ (&#39;Tutor&#39;, &#39;BUSS6002&#39;),
+ (&#39;Tutor&#39;, &#39;QBUS6810&#39;)]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 

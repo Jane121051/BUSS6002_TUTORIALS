@@ -11905,7 +11905,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><h1>BUSS6002 - Data Science in Business</h1></center><h1 id="Tutorial-8---Model-Selection">Tutorial 8 - Model Selection<a class="anchor-link" href="#Tutorial-8---Model-Selection">&#182;</a></h1><h2 id="Polynomial-Regression-(Reminder)">Polynomial Regression (Reminder)<a class="anchor-link" href="#Polynomial-Regression-(Reminder)">&#182;</a></h2><p>In week 6 we saw how to build a linear regression model, which in the case of a multiple linear regression with two features takes the form:</p>
+<center><h1>BUSS6002 - Data Science in Business</h1></center><h4 id="Pre-Tutorial-Checklist">Pre-Tutorial Checklist<a class="anchor-link" href="#Pre-Tutorial-Checklist">&#182;</a></h4><ol>
+<li>Complete Tasks 1 and 2 from week 7</li>
+<li>Read “Polynomial Regression”</li>
+</ol>
+<h1 id="Tutorial-8---Model-Selection">Tutorial 8 - Model Selection<a class="anchor-link" href="#Tutorial-8---Model-Selection">&#182;</a></h1><h2 id="Polynomial-Regression-(Reminder)">Polynomial Regression (Reminder)<a class="anchor-link" href="#Polynomial-Regression-(Reminder)">&#182;</a></h2><p>In week 6 we saw how to build a linear regression model, which in the case of a multiple linear regression with two features takes the form:</p>
 <p>$$ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 $$</p>
 <p>As the name suggests, these algorithms are very good at modeling linear functions, that is functions where each feature is multiplied by a constant weight $\beta$. One downside of these models is that any nonlinearities in the relationship between features and target might be missed. Nonlinearities are terms in our model function where feature variables are multiplied together (e.g. $\beta_{i} x_1 x_2$), or where a feature is raised to a power (e.g. $\beta_{i} x_1^2$). A polynomial of order 3 is a polynomial where the highest power is 3, e.g:</p>
 <p>$$y = \beta_0 + \beta_1 x_1 + \beta_{2} x_1^2 + \beta_{3} x_1^3$$</p>
