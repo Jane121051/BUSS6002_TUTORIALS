@@ -11957,27 +11957,15 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
 
-<span class="n">connection</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">dbname</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
-                               <span class="n">user</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
-                               <span class="n">password</span><span class="o">=</span><span class="s2">&quot;q8ZgYAm7qUkYIAgUAlcBXWCgJwshvkEU&quot;</span><span class="p">,</span>
-                               <span class="n">host</span><span class="o">=</span><span class="s2">&quot;isilo.db.elephantsql.com&quot;</span><span class="p">,</span>
-                               <span class="n">port</span><span class="o">=</span><span class="mi">5432</span><span class="p">)</span>
-
-<span class="n">connection2</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">dbname</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
-                               <span class="n">user</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
-                               <span class="n">password</span><span class="o">=</span><span class="s2">&quot;q8ZgYAm7qUkYIAgUAlcBXWCgJwshvkEU&quot;</span><span class="p">,</span>
-                               <span class="n">host</span><span class="o">=</span><span class="s2">&quot;isilo.db.elephantsql.com&quot;</span><span class="p">,</span>
-                               <span class="n">port</span><span class="o">=</span><span class="mi">5432</span><span class="p">)</span>
-
-<span class="n">connection3</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">dbname</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
-                               <span class="n">user</span><span class="o">=</span><span class="s2">&quot;lhyngbxh&quot;</span><span class="p">,</span>
-                               <span class="n">password</span><span class="o">=</span><span class="s2">&quot;q8ZgYAm7qUkYIAgUAlcBXWCgJwshvkEU&quot;</span><span class="p">,</span>
-                               <span class="n">host</span><span class="o">=</span><span class="s2">&quot;isilo.db.elephantsql.com&quot;</span><span class="p">,</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">dbname</span><span class="o">=</span><span class="s2">&quot;DATABASE_NAME&quot;</span><span class="p">,</span>
+                               <span class="n">user</span><span class="o">=</span><span class="s2">&quot;USER_NAME&quot;</span><span class="p">,</span>
+                               <span class="n">password</span><span class="o">=</span><span class="s2">&quot;PASSWORD&quot;</span><span class="p">,</span>
+                               <span class="n">host</span><span class="o">=</span><span class="s2">&quot;SOMETHING.db.elephantsql.com&quot;</span><span class="p">,</span>
                                <span class="n">port</span><span class="o">=</span><span class="mi">5432</span><span class="p">)</span>
 </pre></div>
 
@@ -12136,7 +12124,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">psycopg2.extras</span> <span class="k">import</span> <span class="n">execute_values</span>
@@ -12154,32 +12142,6 @@ a.anchor-link {
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-2-4bbf47cb1795&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span> 
-<span class="ansi-green-intense-fg ansi-bold">     10</span> <span class="ansi-red-fg"># Get a cursor</span>
-<span class="ansi-green-fg">---&gt; 11</span><span class="ansi-red-fg"> </span>cursor <span class="ansi-blue-fg">=</span> connection<span class="ansi-blue-fg">.</span>cursor<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     12</span> execute_values<span class="ansi-blue-fg">(</span>cursor<span class="ansi-blue-fg">,</span> insert_qry<span class="ansi-blue-fg">,</span> data<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;connection&#39; is not defined</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12221,7 +12183,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">psycopg2.extras</span> <span class="k">import</span> <span class="n">execute_values</span>
@@ -12337,7 +12299,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
@@ -12377,7 +12339,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
@@ -12422,7 +12384,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
@@ -12471,7 +12433,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
@@ -12527,7 +12489,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas.io.sql</span> <span class="k">as</span> <span class="nn">psql</span>
@@ -12547,7 +12509,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[33]:</div>
+<div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -12625,7 +12587,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">select_qry</span> <span class="o">=</span> <span class="s2">&quot;SELECT username, role FROM users&quot;</span>
@@ -12645,7 +12607,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[38]:</div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -12719,7 +12681,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">select_qry</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM users WHERE role = &#39;Tutor&#39;&quot;</span>
@@ -12739,7 +12701,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[35]:</div>
+<div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -12813,7 +12775,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">select_qry</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM users WHERE role = &#39;Tutor&#39; LIMIT 2&quot;</span>
@@ -12833,7 +12795,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[36]:</div>
+<div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -12901,7 +12863,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">select_qry</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM users WHERE role = &#39;Tutor&#39; ORDER BY id DESC&quot;</span>
@@ -12921,7 +12883,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[37]:</div>
+<div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -12997,7 +12959,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">update_qry</span> <span class="o">=</span> <span class="s2">&quot;UPDATE users SET role = &#39;Lecturer&#39; WHERE username = &#39;Jess&#39;&quot;</span>
@@ -13015,7 +12977,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Retrieve all results</span>
@@ -13034,7 +12996,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[41]:</div>
+<div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -13108,7 +13070,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">delete_qry</span> <span class="o">=</span> <span class="s2">&quot;DELETE FROM users WHERE username = &#39;Kelvin&#39;&quot;</span>
@@ -13126,7 +13088,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Retrieve all results</span>
@@ -13145,7 +13107,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[43]:</div>
+<div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -13231,7 +13193,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">psycopg2.extras</span> <span class="k">import</span> <span class="n">execute_values</span>
@@ -13273,7 +13235,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
@@ -13292,7 +13254,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[44]:</div>
+<div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -13383,7 +13345,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">psycopg2.extras</span> <span class="k">import</span> <span class="n">execute_values</span>
@@ -13429,7 +13391,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
@@ -13448,7 +13410,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[45]:</div>
+<div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -13536,7 +13498,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Joins">Joins<a class="anchor-link" href="#Joins">&#182;</a></h3><p>To match up data across foreign key relationships you can use the join command</p>
-<p>&lt;img src="img/joins.png" width = 600px&gt;
+<p><img src="img/joins.png" width=600px>
 <em>image from <a href="https://www.w3schools.com/sql/sql_join.asp">https://www.w3schools.com/sql/sql_join.asp</a></em></p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">staff</span><span class="p">.</span><span class="n">username</span><span class="p">,</span> <span class="n">roles</span><span class="p">.</span><span class="n">role</span><span class="p">,</span> <span class="n">roles</span><span class="p">.</span><span class="n">unit</span>
 <span class="k">FROM</span> <span class="n">roles</span>
@@ -13589,7 +13551,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
@@ -13611,7 +13573,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[47]:</div>
+<div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -13709,7 +13671,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
@@ -13733,7 +13695,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[1]:</div>
+<div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -13764,7 +13726,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13780,6 +13742,75 @@ a.anchor-link {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[26]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>role</th>
+      <th>unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Tutor</td>
+      <td>BUSS6002</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Tutor</td>
+      <td>BUSS6002</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Lecturer</td>
+      <td>BUSS6002</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Tutor</td>
+      <td>BUSS6002</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Tutor</td>
+      <td>BUSS6002</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -13792,7 +13823,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query_str</span> <span class="o">=</span> <span class="s2">&quot;SELECT staff.username, roles.role, roles.unit FROM roles INNER JOIN staff ON staff.staff_id = roles.staff_id&quot;</span>
@@ -13803,6 +13834,81 @@ a.anchor-link {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[27]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>username</th>
+      <th>role</th>
+      <th>unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Kelvin</td>
+      <td>Tutor</td>
+      <td>BUSS6002</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Harrison</td>
+      <td>Tutor</td>
+      <td>BUSS6002</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Stephen</td>
+      <td>Lecturer</td>
+      <td>BUSS6002</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Stephen</td>
+      <td>Tutor</td>
+      <td>BUSS6002</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Prasad</td>
+      <td>Tutor</td>
+      <td>BUSS6002</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
